@@ -1,0 +1,16 @@
+import styled from 'styled-components';
+const Book = ({
+    "bookID": 1,
+   "title": "Harry Potter and the Half-Blood Prince (Harry Potter  #6)",
+   "authors": "J.K. Rowling/Mary GrandPré",
+   "average_rating": "4.57",
+   "isbn": "0439785960",
+   "isbn13": "9780439785969",
+   "language_code": "eng",
+   "num_pages": "652",
+   "ratings_count": 2095690,
+   "text_reviews_count": 27591,
+   "publication_date": "9/16/2006",
+   "publisher": "Scholastic Inc.",
+   "FIELD13": ""
+})
