@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-const Book = ({
+const default_data = ({
     "bookID": 1,
    "title": "Harry Potter and the Half-Blood Prince (Harry Potter  #6)",
    "authors": "J.K. Rowling/Mary GrandPré",
@@ -14,3 +14,28 @@ const Book = ({
    "publisher": "Scholastic Inc.",
    "FIELD13": ""
 })
+
+ const Wrap = styled.div`
+ max-width:280px;
+ height: 150px;
+ background-color: #78b0ff;
+
+ 
+ 
+ 
+ `
+
+ const Book = ({
+ title=default_data.title,
+ id=default_data.bookId,
+ pages=default_data.pages,
+ avg=default_data.average_rating
+
+ }) => {
+    return <Wrap>
+        <h3>{title}</h3>
+        <p>Book - {id} - {avg} - {pages}</p>
+    </Wrap>
+ }
+
+ export default Book;
